@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		6303F1621CA8BA430062063C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6303F1611CA8BA430062063C /* AppDelegate.swift */; };
-		6303F1641CA8BA430062063C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6303F1631CA8BA430062063C /* ViewController.swift */; };
 		6303F1671CA8BA430062063C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6303F1651CA8BA430062063C /* Main.storyboard */; };
 		6303F1691CA8BA430062063C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6303F1681CA8BA430062063C /* Assets.xcassets */; };
 		6303F16C1CA8BA430062063C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6303F16A1CA8BA430062063C /* LaunchScreen.storyboard */; };
+		6303F1751CA8BB170062063C /* HapinessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6303F1741CA8BB170062063C /* HapinessVC.swift */; };
+		6303F1771CA8BBE80062063C /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6303F1761CA8BBE80062063C /* FaceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6303F15E1CA8BA430062063C /* StanfordHappyFaceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StanfordHappyFaceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6303F1611CA8BA430062063C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6303F1631CA8BA430062063C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6303F1661CA8BA430062063C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6303F1681CA8BA430062063C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6303F16B1CA8BA430062063C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6303F16D1CA8BA430062063C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6303F1741CA8BB170062063C /* HapinessVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapinessVC.swift; sourceTree = "<group>"; };
+		6303F1761CA8BBE80062063C /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		6303F1601CA8BA430062063C /* StanfordHappyFaceApp */ = {
 			isa = PBXGroup;
 			children = (
-				6303F1611CA8BA430062063C /* AppDelegate.swift */,
-				6303F1631CA8BA430062063C /* ViewController.swift */,
+				6303F1731CA8BA8C0062063C /* Supporting Files */,
 				6303F1651CA8BA430062063C /* Main.storyboard */,
-				6303F1681CA8BA430062063C /* Assets.xcassets */,
-				6303F16A1CA8BA430062063C /* LaunchScreen.storyboard */,
-				6303F16D1CA8BA430062063C /* Info.plist */,
+				6303F1761CA8BBE80062063C /* FaceView.swift */,
+				6303F1741CA8BB170062063C /* HapinessVC.swift */,
 			);
 			path = StanfordHappyFaceApp;
+			sourceTree = "<group>";
+		};
+		6303F1731CA8BA8C0062063C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6303F16A1CA8BA430062063C /* LaunchScreen.storyboard */,
+				6303F16D1CA8BA430062063C /* Info.plist */,
+				6303F1611CA8BA430062063C /* AppDelegate.swift */,
+				6303F1681CA8BA430062063C /* Assets.xcassets */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6303F1641CA8BA430062063C /* ViewController.swift in Sources */,
 				6303F1621CA8BA430062063C /* AppDelegate.swift in Sources */,
+				6303F1751CA8BB170062063C /* HapinessVC.swift in Sources */,
+				6303F1771CA8BBE80062063C /* FaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
