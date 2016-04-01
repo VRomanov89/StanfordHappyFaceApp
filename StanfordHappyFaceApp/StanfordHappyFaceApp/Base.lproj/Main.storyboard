@@ -20,6 +20,10 @@
                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="mPz-ak-7Fu" customClass="FaceView" customModule="StanfordHappyFaceApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="c7r-8a-BWe" appends="YES" id="p0N-Iv-r4M"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -35,6 +39,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CEE-mV-tAP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="c7r-8a-BWe">
+                    <connections>
+                        <action selector="changeHappiness:" destination="Xr2-P9-E0D" id="a2L-JC-xpr"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="464" y="417"/>
         </scene>
